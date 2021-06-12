@@ -1,0 +1,90 @@
+/* 
+Цвет текста (заголовки) - #212121;
+Цвет текста (основной) - #757575;
+Цвет текста (ссылки навигации) - #212121;
+Цвет текста (акцент) - #2196F3; 
+Цвет фона - #FFFFFF
+Цвет фона (вторичный) - #2F303A
+Цвет текста (адреса в футере) - 255, 255, 255, 0,6; 
+Цвет фона секции - #F5F4FA
+Цвет лого - #000000 
+*/
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-bckg-color: #ffffff;
+  --footer-bckg-color: #2f303a;
+}
+body {
+  background-color: var(--primary-bckg-color);
+  color: var(--primary-text-color);
+}
+/* Убираем метки из ul */
+.list {
+  list-style: none;
+}
+/* Site Nav */
+.header-logo {
+  color: #000000;
+}
+.logo-span {
+  color: #2196f3;
+}
+.site-nav .link {
+  color: #212121;
+  text-decoration: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+/* Adress Nav */
+.address-nav .link {
+  color: #757575;
+  text-decoration: none;
+  font-style: normal;
+}
+.address-nav .link:hover,
+.address-nav .link:focus {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-style: normal;
+}
+/* Main */
+/* Герой */
+.hero {
+  background-color: var(--footer-bckg-color);
+}
+.hero-title {
+  color: #ffffff;
+}
+.button {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+.section,
+.team {
+  color: var(--primary-text-color);
+}
+.section-title {
+  color: var(--title-text-color);
+}
+/* Team Section (выделяется из остальных секций наличием бежевого фона.
+Задаем секции фон, как на макете) */
+.team {
+  background-color: #f5f4fa;
+}
+/* Footer */
+.footer {
+  background-color: var(--footer-bckg-color);
+}
+.footer-logo,
+.map-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-style: normal;
+}

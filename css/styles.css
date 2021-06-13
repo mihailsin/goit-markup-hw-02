@@ -19,6 +19,8 @@
 body {
   background-color: var(--primary-bckg-color);
   color: var(--primary-text-color);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
 }
 /* Убираем метки из ul */
 .list {
@@ -26,6 +28,11 @@ body {
 }
 /* Site Nav */
 .header-logo {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.19;
   color: #000000;
 }
 .logo-span {
@@ -34,6 +41,11 @@ body {
 .site-nav .link {
   color: #212121;
   text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -47,6 +59,10 @@ body {
   color: #757575;
   text-decoration: none;
   font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .address-nav .link:hover,
 .address-nav .link:focus {
@@ -61,10 +77,25 @@ body {
 }
 .hero-title {
   color: #ffffff;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 .button {
   background-color: var(--accent-color);
   color: #ffffff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 .section,
 .team {
@@ -82,9 +113,25 @@ body {
 .footer {
   background-color: var(--footer-bckg-color);
 }
+.footer-logo {
+  font-family: Raleway, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
 .footer-logo,
 .map-link {
   color: #ffffff;
   text-decoration: none;
   font-style: normal;
+}
+.filter-button {
+  background-color: #f5f4fa;
+}
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
 }

@@ -22,111 +22,37 @@ body {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
 }
-/* Убираем метки из ul */
-.list {
+/* Убираеn метки из списков */
+.unmarked {
   list-style: none;
 }
-/* Site Nav */
-.header-logo {
-  font-family: Raleway, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 1.19;
-  color: #000000;
+/* Убирает подчеркивания из ссылок */
+.link {
+  text-decoration: none;
 }
-.logo-span {
+/* Подсвечивает текущую страницу */
+.current {
   color: var(--accent-color);
 }
-.site-nav .link,
-.address-nav .link {
+/* =========HEADER========= */
+.header-logo {
+  color: var(--accent-color);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+}
+.headlogo-span {
+  color: #000000;
+}
+.site-nav {
   color: var(--title-text-color);
-  text-decoration: none;
+  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 16px;
   letter-spacing: 0.02em;
-}
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--accent-color);
-}
-.site-nav .link.current {
-  color: var(--accent-color);
-}
-/* Adress Nav */
-.address-nav .link {
-  color: #757575;
-}
-.address-nav .link:hover,
-.address-nav .link:focus {
-  color: var(--accent-color);
-  text-decoration: none;
-  font-style: normal;
-}
-/* Main */
-/* Герой */
-.hero {
-  background-color: var(--footer-bckg-color);
-}
-.hero-title {
-  color: #ffffff;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-.button {
-  background-color: var(--accent-color);
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-}
-.section,
-.team {
-  color: var(--primary-text-color);
-}
-.section-title {
-  color: var(--title-text-color);
-}
-/* Team Section (выделяется из остальных секций наличием бежевого фона.
-Задаем секции фон, как на макете) */
-.team {
-  background-color: #f5f4fa;
-}
-/* Footer */
-.footer {
-  background-color: var(--footer-bckg-color);
-}
-.footer-logo {
-  font-family: Raleway, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-}
-.footer-logo,
-.map-link {
-  color: #ffffff;
-  text-decoration: none;
-  font-style: normal;
-}
-.filter-button {
-  background-color: #f5f4fa;
-  cursor: pointer;
-}
-.filter-button:hover,
-.filter-button:focus {
-  background-color: var(--accent-color);
-  color: #ffffff;
 }

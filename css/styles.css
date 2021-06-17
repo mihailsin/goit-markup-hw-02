@@ -12,6 +12,7 @@
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
+  --hero-text-color: #ffffff;
   --accent-color: #2196f3;
   --primary-bckg-color: #ffffff;
   --footer-bckg-color: #2f303a;
@@ -33,26 +34,170 @@ body {
 /* Подсвечивает текущую страницу */
 .current {
   color: var(--accent-color);
+  text-decoration: none;
+}
+/* Применяет полупрозрачный цвет к заголовкам, которые будут скрыты */
+.logical-title {
+  color: rgba(0, 0, 0, 0.2);
 }
 /* =========HEADER========= */
+
+/* head-logo */
 .header-logo {
   color: var(--accent-color);
   font-family: Raleway;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
 }
 .headlogo-span {
   color: #000000;
 }
-.site-nav {
-  color: var(--title-text-color);
-  font-family: Roboto;
-  font-style: normal;
+/* Site-Nav */
+.page-header {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
+}
+.nav-list .link {
+  color: var(--title-text-color);
+}
+.nav-list .link:hover,
+.nav-list .link:focus {
+  color: var(--accent-color);
+}
+/* Contacts */
+.header-contacts-list .link {
+  color: var(--primary-text-color);
+}
+.header-contacts-list .link:hover,
+.header-contacts-list .link:focus {
+  color: var(--accent-color);
+}
+/* ===============MAIN============== */
+
+/* Hero */
+.hero {
+  background-color: var(--footer-bckg-color);
+}
+.hero-title {
+  color: var(--hero-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.button {
+  color: var(--hero-text-color);
+  background-color: var(--accent-color);
+  font-family: 'roboto';
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+/* Advantages */
+.advantages-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.advantages-dscr {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+/* Features */
+.section-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+/* Team */
+.team {
+  background-color: #f5f4fa;
+}
+.team-list {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+.team-member {
+  color: var(--title-text-color);
+}
+/*==========FOOTER========*/
+.page-footer {
+  background-color: var(--footer-bckg-color);
+}
+.footer-logo {
+  color: var(--accent-color);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.footlogo-span {
+  color: rgba(255, 255, 255, 1);
+}
+.footer-contacts-list .link {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.footer-contacts-list .link:hover,
+.footer-contacts-list .link:focus {
+  color: var(--accent-color);
+}
+.map-link {
+  color: #ffffff;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71px;
+  letter-spacing: 0.03em;
+}
+
+/* Exhibition */
+.exhibition-list-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.exhibition-list-dscr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+}
+/* ==============Filter List================ */
+.filter-button {
+  font-family: 'roboto';
+  background-color: #f5f4fa;
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  cursor: pointer;
+}
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
 }

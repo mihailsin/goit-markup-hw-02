@@ -113,7 +113,6 @@ body {
   text-transform: uppercase;
 }
 .advantages-dscr {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 }
@@ -181,7 +180,6 @@ body {
   letter-spacing: 0.06em;
 }
 .exhibition-list-dscr {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
 }

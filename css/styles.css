@@ -12,24 +12,32 @@
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
+  --ltitle-text-color: rgba(0, 0, 0, 0.2);
   --hero-text-color: #ffffff;
   --accent-color: #2196f3;
   --primary-bckg-color: #ffffff;
+  --secondary-bckg-color: #f5f4fa;
   --footer-bckg-color: #2f303a;
+  --blacktext-color: #000000;
+  --whitetext-color: #ffffff;
+  --footlogo-span-color: rgba(255, 255, 255, 1);
+  --foot-contacts-color: rgba(255, 255, 255, 0.6);
 }
 body {
   background-color: var(--primary-bckg-color);
   color: var(--primary-text-color);
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
+  font-style: normal;
 }
 /* Убираеn метки из списков */
 .unmarked {
   list-style: none;
 }
-/* Убирает подчеркивания из ссылок */
+/* Убирает подчеркивания и курсив из ссылок */
 .link {
   text-decoration: none;
+  font-style: normal;
 }
 /* Подсвечивает текущую страницу */
 .current {
@@ -38,7 +46,7 @@ body {
 }
 /* Применяет полупрозрачный цвет к заголовкам, которые будут скрыты */
 .logical-title {
-  color: rgba(0, 0, 0, 0.2);
+  color: var(--ltitle-text-color);
 }
 /* =========HEADER========= */
 
@@ -46,14 +54,13 @@ body {
 .header-logo {
   color: var(--accent-color);
   font-family: Raleway;
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
 .headlogo-span {
-  color: #000000;
+  color: var(--blacktext-color);
 }
 /* Site-Nav */
 .page-header {
@@ -95,7 +102,7 @@ body {
 .button {
   color: var(--hero-text-color);
   background-color: var(--accent-color);
-  font-family: 'roboto';
+  font-family: inherit;
   font-size: 16px;
   line-height: 1.88;
   display: flex;
@@ -126,7 +133,7 @@ body {
 }
 /* Team */
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--secondary-bckg-color);
 }
 .team-list {
   font-weight: 500;
@@ -143,18 +150,16 @@ body {
 .footer-logo {
   color: var(--accent-color);
   font-family: Raleway;
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
 .footlogo-span {
-  color: rgba(255, 255, 255, 1);
+  color: var(--footlogo-span-color);
 }
 .footer-contacts-list .link {
-  color: rgba(255, 255, 255, 0.6);
-  font-style: normal;
+  color: var(--foot-contacts-color);
   font-size: 14px;
   line-height: 1.71;
 }
@@ -162,8 +167,10 @@ body {
 .footer-contacts-list .link:focus {
   color: var(--accent-color);
 }
+/* Ссылка на карту визуально отличается от остального списка ссылок,
+ поэтому font-style: normal; и text-decoration: none; -принудительно */
 .map-link {
-  color: #ffffff;
+  color: var(--whitetext-color);
   font-style: normal;
   text-decoration: none;
   font-size: 14px;
@@ -186,7 +193,7 @@ body {
 /* ==============Filter List================ */
 .filter-button {
   font-family: 'roboto';
-  background-color: #f5f4fa;
+  background-color: var(--secondary-bckg-color);
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -197,5 +204,5 @@ body {
 .filter-button:hover,
 .filter-button:focus {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--whitetext-color);
 }

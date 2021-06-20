@@ -23,6 +23,14 @@
   --footlogo-span-color: rgba(255, 255, 255, 1);
   --foot-contacts-color: rgba(255, 255, 255, 0.6);
 }
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 body {
   background-color: var(--primary-bckg-color);
   color: var(--primary-text-color);
@@ -33,6 +41,7 @@ body {
 /* Убираеn метки из списков */
 .unmarked {
   list-style: none;
+  margin: 0;
 }
 /* Убирает подчеркивания и курсив из ссылок */
 .link {
@@ -48,7 +57,18 @@ body {
   color: var(--ltitle-text-color);
 }
 /* =========HEADER========= */
-
+.page-header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  margin-bottom: 0;
+}
+.container {
+  outline: 2px solid red;
+  width: 1200px;
+  margin: 0 auto;
+}
 /* head-logo */
 .header-logo {
   color: var(--accent-color);
@@ -62,12 +82,6 @@ body {
   color: var(--blacktext-color);
 }
 /* Site-Nav */
-.page-header {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
 .nav-list .link {
   color: var(--title-text-color);
 }
@@ -97,6 +111,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin: 0;
 }
 .button {
   color: var(--hero-text-color);

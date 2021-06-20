@@ -37,7 +37,6 @@ body {
 /* Убирает подчеркивания и курсив из ссылок */
 .link {
   text-decoration: none;
-  font-style: normal;
 }
 /* Подсвечивает текущую страницу */
 .current {
@@ -146,6 +145,7 @@ body {
 /*==========FOOTER========*/
 .page-footer {
   background-color: var(--footer-bckg-color);
+  font-style: inherit;
 }
 .footer-logo {
   color: var(--accent-color);
@@ -157,6 +157,9 @@ body {
 }
 .footlogo-span {
   color: var(--footlogo-span-color);
+}
+.contacts {
+  font-style: inherit;
 }
 .footer-contacts-list .link {
   color: var(--foot-contacts-color);
@@ -171,7 +174,6 @@ body {
  поэтому font-style: normal; и text-decoration: none; -принудительно */
 .map-link {
   color: var(--whitetext-color);
-  font-style: normal;
   text-decoration: none;
   font-size: 14px;
   line-height: 1.71;
